@@ -1,0 +1,23 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.icon {
+    width: 16px;
+    color: darkgreen;
+}
+
+.btn {
+  max-width: 60px;
+  padding: 4px 12px;
+  border: 1px solid lightgreen;
+  border-radius: 4px;
+
+  background-color: lightgreen;
+}

@@ -1,0 +1,12 @@
+.container {
+  width: 320px;
+  margin: 40px auto;
+  padding: 40px;
+  border-radius: 6px;
+
+  background-color: rgb(221, 248, 221);
+}
+
+.title {
+  margin-bottom: 24px;
+}
