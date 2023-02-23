@@ -16,7 +16,6 @@ const ContactForm = ({ onSubmit }) => {
   const handleFormSubmit = e => {
     e.preventDefault();
     const data = { ...inputValue };
-    console.log(data);
     onSubmit(data);
     setInputValue({
       name: '',
