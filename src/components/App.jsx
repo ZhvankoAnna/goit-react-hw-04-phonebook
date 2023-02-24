@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import ContactForm from './ContactForm/ContactForm';
 import ContactList from './ContactList/ContactList';
 import Filter from './Filter/Filter';
@@ -18,15 +18,8 @@ const App = () => {
     () => JSON.parse(localStorage.getItem('contacts')) ?? [...initialState]
   );
   const [filter, setFilter] = useState('');
-  const firstRender = useRef(true);
-
-  // console.log(firstRender);
 
   useEffect(() => {
-    if (firstRender.current) {
-      firstRender.current = false;
-      return;
-    }
     localStorage.setItem('contacts', JSON.stringify(contacts));
   }, [contacts]);
 
